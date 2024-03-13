@@ -106,12 +106,16 @@
     <!-- Added ID && input fields -->
     <section id="contact">
       <h2>Contact Me 📡</h2>
-      <p>
-        Name:<input /> Email:
-        <input type="email" placeholder="name@gmail.com" /> Message:<textarea
-        ></textarea>
+      <!-- Added a <form> for accessibility and Backend -->
+      <form action="index.php" method="post">
+        <label for="name">Name:</label>
+        <input id="name" />
+        <label for="email">Email:</label>
+        <input type="email" placeholder="name@gmail.com" id="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
         <input type="submit" />
-      </p>
+      </form>
     </section>
 
     <!-- Footer -->
